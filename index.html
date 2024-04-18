@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <title>Clima Tempo</title>
+</head>
+<body>
+    <div id="titulo">
+        <h1>Buscar temperatura</h1>
+    </div>
+    <div id="bodi">
+        <div class="conteudo">
+            <label for="name">
+                <h3>Nome</h3>
+            </label>
+            <input id="name" type="text" placeholder="Insira uma cidade">
+        </div>
+        <div class="conteudo">
+            <label for="temp">
+                <h3>Temperatura</h3>
+            </label>
+            <output id="temp"></output>
+        </div>
+        <button onclick="obterTemp()">Clica</button>
+    </div>
+    <script src="./src/scripts/script-get.js"></script>
+</body>
+</html>
