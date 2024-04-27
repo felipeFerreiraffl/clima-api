@@ -1,34 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+/* Variáveis reutilizáveis */
+:root {
+    /* Cores  */
+    --black: #1C1C1C ;
+    --page-color: #e8e8e8;
+    --session-color: #bcbcbc;
+    --white: #FFFAFA;
+    --sky-blue: #9fe4ff;
+    --sky-light-blue: #cbeaf5;
+    --sky-deep-blue: #47d1ff;
+    --deep-blue: #194f61;
+    --yellow: #f3ff13;
+    --light-yellow: #fff59d;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Merienda", cursive; 
     list-style: none;
     box-sizing: border-box;
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
+#corpo {
+    background-image: url(https://img.freepik.com/vetores-premium/fundo-do-ceu_23-2148661895.jpg);
+    background-size: cover;
+    border: solid 10px var(--deep-blue);
+    border-radius: 100px;
+    width: 75%;
+    margin: auto;
+    margin-top: 6%;
+}
+
 #titulo {
-    background-color: black ; /*  William's color */
-    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 50%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#titulo h1 {
+    color: var(--light-yellow);
+    border-radius: 30px;
+    -webkit-text-stroke: 1.5px var(--black);
+    font-weight: 900;
+    padding: 10px;
+}
+
+#titulo img {
+    background: linear-gradient(var(--yellow), var(--light-yellow));
+    border: solid 3px var(--deep-blue);
+    border-radius: 50%;
+}
+
+#clima  {
+    background: linear-gradient(var(--sky-deep-blue), var(--sky-blue), var(--sky-light-blue));
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+    width: 60%;
+    margin: auto;
     margin-bottom: 5%;
+    border: solid 3px var(--deep-blue);
+    border-radius: 50px;
 }
 
-#bodi {
-    width: 100%;
+.conteudo {     
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    font-size: x-large;
+    margin-right: 25px;
 }
 
-.conteudo {                     
-    margin-bottom: 2%;
-    font-size: larger;
+#con1 {
+    border-right: solid 3px var(--deep-blue);
+}
+
+.conteudo input {
+    font-size: 20px;
 }
 
 .conteudo h3 {
     margin-bottom: 10px;
+    margin-top: 10px;
     font-size: larger;
+    color: var(--white);
+    -webkit-text-stroke: 1.5px var(--black);
+    font-weight: 900;
+}
+
+.conteudo output {
+    margin-top: 5%;
+    margin-bottom: 5%;
 }

@@ -27,10 +27,11 @@ const obterTemp = () =>{
       })
         .then(dados =>{
           console.log(dados);
-          document.querySelector('#temp').value = dados.main.temp + ' °C';
 
+          document.querySelector('#temp').value = dados.main.temp + ' °C';
         })
         .catch(erro => {
-          console.log(erro)
+          console.log(erro);
+          alert('Coloca a cidade, burro!');
         })
   }

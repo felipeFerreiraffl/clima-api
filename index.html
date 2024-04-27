@@ -7,23 +7,28 @@
     <title>Clima Tempo</title>
 </head>
 <body>
-    <div id="titulo">
-        <h1>Buscar temperatura</h1>
-    </div>
-    <div id="bodi">
-        <div class="conteudo">
-            <label for="name">
-                <h3>Nome</h3>
-            </label>
-            <input id="name" type="text" placeholder="Insira uma cidade">
+    <div id="corpo">
+        <div id="titulo">
+            <img src="https://i.pinimg.com/originals/11/e8/f6/11e8f6a44faaed242dacf6e6ad53d057.gif" width="150" height="150" alt="Sun">
+            <h1 id="titulo-clima">Clima-Tempo</h1>
         </div>
-        <div class="conteudo">
-            <label for="temp">
-                <h3>Temperatura</h3>
-            </label>
-            <output id="temp"></output>
+        <div id="clima">
+            <div id="con1">
+                <div class="conteudo">
+                    <label for="name">
+                        <h3>Nome</h3>
+                    </label>
+                    <input id="name" type="text" placeholder="Insira uma cidade">
+                </div>
+            </div>
+            <div class="conteudo">
+                <label for="temp">
+                    <h3>Temperatura</h3>
+                </label>
+                <output id="temp" ></output>
+                <button onclick="obterTemp()">Clica</button>
+            </div>
         </div>
-        <button onclick="obterTemp()">Clica</button>
     </div>
     <script src="./src/scripts/script-get.js"></script>
 </body>
